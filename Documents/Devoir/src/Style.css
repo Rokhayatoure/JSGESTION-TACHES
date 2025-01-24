@@ -1,0 +1,65 @@
+/* Mode sombre */
+.dark {
+    background-color: #1a202c; /* Fond sombre */
+    color: white; /* Texte clair */
+}
+
+/* Autres éléments qui doivent changer en mode sombre */
+.dark .bg-gray-100 {
+    background-color: #2d3748; /* Fond plus sombre pour les sections */
+}
+
+.dark .bg-gray-200 {
+    background-color: #4a5568; /* Fond de tableau plus sombre */
+}
+
+.dark .text-gray-800 {
+    color: #f7fafc; /* Couleur du texte claire */
+}
+
+.dark .text-gray-500 {
+    color: #e2e8f0; /* Texte moins accentué */
+}
+
+.dark .bg-sky-700 {
+    background-color: #2b6cb0; /* Bleu foncé */
+}
+
+.dark .bg-blue-500 {
+    background-color: #3182ce; /* Bleu clair pour les boutons */
+}
+
+.dark .hover\:bg-blue-600:hover {
+    background-color: #2b6cb0; /* Couleur de survol */
+}
+
+.dark .bg-green-500 {
+    background-color: #38a169; /* Vert foncé pour le bouton d'ajout */
+}
+
+.dark .hover\:bg-green-600:hover {
+    background-color: #2f855a; /* Survol du bouton vert */
+}
+/* Mode sombre pour les champs de formulaire */
+.dark input[type="search"],
+.dark select,
+.dark button {
+    background-color: #2d3748; /* Fond sombre */
+    color: white; /* Texte clair */
+    border-color: #4a5568; /* Bordure plus foncée */
+}
+
+/* Modifier le style du placeholder pour les champs de recherche */
+.dark input::placeholder {
+    color: #a0aec0; /* Placeholder clair en mode sombre */
+}
+
+/* Ajouter des effets de survol */
+.dark button:hover {
+    background-color: #2b6cb0; /* Couleur de survol pour les boutons */
+}
+
+.dark select:hover,
+.dark input[type="search"]:hover {
+    border-color: #2b6cb0; /* Changer la bordure au survol */
+}

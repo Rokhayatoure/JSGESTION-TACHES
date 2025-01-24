@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Connexion</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="flex items-center justify-center min-h-screen bg-gray-100">
+
+    <div class="w-full max-w-md bg-white border rounded-lg shadow-lg p-6">
+        <div class="flex items-center justify-center mb-6">
+            <!-- Logo -->
+            <!-- <img class="w-24 h-24" src="../../public/assets/logo.png" alt="Logo"> -->
+            <h1 class="text-2xl font-bold text-gray-700">CONNEXION</h1>
+        </div>
+        
+        
+        <form id="loginForm" class="space-y-6" action="..src/login.js" method="POST">
+            <div>
+                <label for="email" class=" text-lg font-medium text-gray-700">Login</label>
+                <input id="email" name="email" type="text" placeholder="login" 
+                    class="border-2 border-sky-900    w-full mt-2 p-3 rounded-full text-lg bg-gray-50">
+                    <span id="emailError" class="error hidden" style="color: red;"></span>
+            </div>
+            <div>
+                <label for="password" class=" text-lg font-medium text-gray-700">Password</label>
+                
+                <input id="password" name="password" type="password"  placeholder="password"
+                    class="border-2 border-sky-900  block w-full mt-2 p-3 rounded-full text-lg bg-gray-50">
+                    <span id="mdpError" class="error hidden" style="color: red;"></span>
+            </div>
+            <span id="loginError" class="error hidden" style="color: red;"></span>
+            <button type="submit" 
+                class="w-full bg-sky-900 text-white py-3 text-lg rounded-full hover:bg-sky-700 transition">
+                Se connecter
+            </button>
+        </form>
+    </div>
+
+</body>
+<script src="../src/login.js"></script>
+<script src="../db.json"></script>
+</html>

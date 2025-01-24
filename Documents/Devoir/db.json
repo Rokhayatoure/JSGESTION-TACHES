@@ -1,0 +1,94 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "email": "user@example.com",
+      "password": "123456"
+    },
+    {
+      "id": "2",
+      "email": "admin@example.com",
+      "password": "admin123"
+    }
+  ],
+  "tasks": [
+    {
+      "id": "0a90",
+      "name": "tache1",
+      "completed": true
+    },
+    {
+      "id": "9dca",
+      "name": "tache1",
+      "completed": true
+    },
+    {
+      "id": "08ce",
+      "name": "tache1",
+      "completed": true
+    },
+    {
+      "id": "2737",
+      "name": "tache1",
+      "completed": true
+    },
+    {
+      "id": "6160",
+      "name": "tache3",
+      "completed": true
+    },
+    {
+      "id": "1fbf",
+      "name": "tache4",
+      "completed": false
+    },
+    {
+      "id": "9c45",
+      "name": "tache1",
+      "completed": false
+    },
+    {
+      "id": "eb45",
+      "name": "tache1"
+    },
+    {
+      "id": "dbfe",
+      "name": "tache4",
+      "completed": false
+    },
+    {
+      "id": "0bbb",
+      "name": "tache1",
+      "completed": false
+    },
+    {
+      "id": "eb3f",
+      "name": "tache1"
+    },
+    {
+      "id": "478d",
+      "name": "tache1",
+      "completed": false
+    },
+    {
+      "id": "fc9a",
+      "name": "tache1",
+      "completed": false
+    },
+    {
+      "id": "d2ad",
+      "name": "tache3",
+      "completed": false
+    },
+    {
+      "id": "5efb",
+      "name": "tache1",
+      "completed": false
+    },
+    {
+      "id": "4b52",
+      "name": "Ache500",
+      "completed": true
+    }
+  ]
+}
