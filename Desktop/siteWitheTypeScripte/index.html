@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <title>Document</title>
+</head>
+<body class="">
+    <div>
+        <header class="border w-full h-20 bg-blue-100 flex fixed top-0 left-0 z-50 ">
+            <div class="flex justify-betewen w-full items-center">
+                <img src="image/Logo.png" class="w-72 p-6" alt="">
+                     
+
+                <ul class=" flex  space-x-6  ml-auto mr-8 ">
+                    <li>Nos offres</li>
+                    <li>Nos clients</li>
+                    <li>Nos services</li>
+                    <li>Qui sommes-nous</li>
+                    <li>Contactez-nous</li>
+                </ul>
+            </div>
+             </header>
+             <div class="relative h-auto min-h-[600px] mt-20 w-full  overflow-hidden bg-gradient-to-r from-blue-900 to-blue-600 ">
+                <div class="absolute inset-0" >
+                    <!-- style="opacity: 1; transform: none; -->
+                    <img id="slide"  src="image/image1.jpg" alt="Slide 2" class="h-full w-full object-cover opacity-50">
+                </div>
+                <div class="absolute bottom-5 left-1/2 z-20 flex -translate-x-1/2 gap-2">
+                    <!-- <button class="h-2 w-2 rounded-full transition-all bg-white/50 "   onclick="ChangeSlide(-1)"></button>
+                    <button class="h-2 w-2 rounded-full transition-all bg-white w-4" aria-label="Go to slide 2"></button>
+                    <button class="h-2 w-2 rounded-full transition-all bg-white/50" onclick="ChangeSlide(1)"></button> -->
+
+                    <button class="h-2 w-2 rounded-full transition-all bg-white/50" onclick="changeSlide(-1)"></button>
+                    <button class="h-2 w-2 rounded-full transition-all bg-white w-4" ></button>
+
+                      <button class="h-2 w-2 rounded-full transition-all bg-white/50" onclick="changeSlide(1)"></button>
+
+                </div>
+                <div class="relative z-10 flex h-full items-center justify-start px-8 text-left">
+                    <div class="space-y-6">
+                        <h1 class="max-w-lg text-4xl font-bold text-white" >Enrichissez votre écosystème digital et accélérez votre business</h1>
+                        <p class="max-w-md text-lg text-white" >Faites le choix d’un acteur de confiance pour déployer, enrichir et maintenir des solutions collaboratives et digitales (ECM/CCM/Office 365) de dernière génération au sein de votre entreprise.</p>
+                        <button class="bg-blue-600 text-white px-5 py-2 rounded hover:bg-blue-700" >Voir nos offres</button>
+                    </div>
+                </div>
+            </div>
+            <!-- <div class="w-full h-auto bg-blue-300">
+
+                <div class="" style=" ">
+                    <img id="slide"  src="image/image1.jpg" alt="Slide 2" class="h-full w-full">
+                </div>
+                  
+            </div> -->
+             <section class="bg-white py-12 w-full">
+                <h2 class="text-2xl font-bold mb-4 text-center">Nos offres</h2>
+                <p class="text-center text-gray-800 mb-6">
+                    Des solutions sur mesure adaptées à vos besoins en digitalisation.
+                </p>
+            
+                <!-- Conteneur flex pour aligner les boutons -->
+                <div class="flex justify-center gap-6 flex-wrap">
+                    <button class=" cards h-36 w-72 font-semibold rounded-lg shadow-md transition duration-300  border hover:border-blue-600 p-4" >
+                        <h2 class="text-xl font-bold text-center">Customer Content Management</h2>
+                        <h3 class="text-center mt-2">
+                            Gestion centralisée de vos contenus digitaux.
+                        </h3>
+                    </button>
+            
+                    <button class="cards sh-36 w-72  text-black font-semibold rounded-lg shadow-md transition duration-300 border hover:border-blue-600 p-4">
+                        <h2 class="text-xl font-bold text-center">Enterprise Content Management</h2>
+                        <h3 class="text-center mt-2">
+                            Solution complète de gestion documentaire.
+                        </h3>
+                    </button>
+            
+                    <button class="cards h-36 w-72 font-semibold rounded-lg shadow-md transition duration-300 border hover:border-blue-600   p-4">
+                        <h2 class="text-xl font-bold text-center">Office 365 & Solutions</h2>
+                        <h3 class="text-center mt-2">
+                            Intégration et déploiement collaboratif.
+                        </h3>
+                    </button>
+                </div>
+            
+                <!-- Section en bas -->
+                <div class="main-card flex justify-center items-center pb-8 mt-12 w-full">
+                    <div class="h-72 w-full mx-8 border bg-blue-500 rounded-lg p-4 flex justify-between">
+                        
+                        <!-- Première section alignée à gauche -->
+                        <div class="flex-1 text-left py-16">
+                            <p class="text-2xl font-bold text-white text-center mb-4">Benefices</p>
+                            <div class="h-9 w-44 bg-white rounded-lg p-2 mx-auto">
+                                <p class="text-blue-500 text-center text-sm">Je veux un projet CCM</p>
+                            </div>
+                        </div>
+                    
+                        <!-- Deuxième section centrée -->
+                        <div class="flex-1 text-center">
+                            <h2 id="titre"  class="  text-xl font-bold text-white py-4">Customer Content Management</h2>
+                            <p class="text-white">Solution Technique</p>
+                            <ul id="liste" class="list-disc list-inside text-white py-4">
+                                <li class="">APIs et connecteurs standards</li>
+                                <li class="pr-14 py-4">Déploiement flexible</li>
+                                <li class="pr-14">Support multilingue</li>
+                            </ul>
+                        </div>
+                    
+                        <!-- Troisième section alignée à droite -->
+                        <div class="flex-1 text-right py-16 pr-6">
+                            <h1   class="text-xl font-bold text-white pr-20">Partenaires</h1>
+                            <div id="logos-div" class="flex justify-end gap-4 mt-2">
+                                <!-- <div  class="bg-white p-2 rounded-lg h-14 w-20 flex justify-center items-center">
+                                    <img id="Image1"     src="image/Compart.png" alt="Partenaire 1" class="h-10">
+                                </div> -->
+                                <!-- <div class="bg-white p-2 rounded-lg h-14 w-20 flex justify-center items-center">
+                                    <img id="Image2" src="image/naelan.png" alt="Partenaire 2" class="h-10">
+                                </div>
+                                <div class="bg-white p-2 rounded-lg h-14 w-20 flex justify-center items-center">
+                                    <img  id="Image3" src="image/Sefas.png" alt="Partenaire 3" class="h-10">
+                                </div> -->
+                            </div>
+                            
+                            <!-- Quatrième image en bas dans un fond blanc -->
+                            <!-- <div class="bg-white p-2 mt-4 rounded-lg h-14 w-20 flex justify-center items-center mx-auto">
+                                <img  id="Image4" src="image/naelan.png" alt="Partenaire 4" class="h-10">
+                            </div> -->
+                        </div>
+                
+                    </div>
+                </div>
+                
+                
+
+            </section>
+            
+
+              
+
+
+         
+         
+    </div>
+
+
+
+
+    <footer class="w-[75rem] bg-blue-100 text-white py-12">
+        <div class="container mx-auto flex flex-col md:flex-row justify-between items-center px-16">
+            <div class="flex flex-col items-center md:items-start">
+                <img src="../image/Logo-stream-management.png" alt="Stream Management" class="w-24 mb-2">
+                <p class="text-sm font-semibold text-[#2B579A]">Stream Management</p>
+            </div>
+            <div class="text-left text-[#2B579A] md:text-left mt-4 md:mt-0">
+                <h3 class="font-bold text-lg">Contactez-nous :</h3>
+                <p>12 rue Vivienne 75002 Paris</p>
+                <p>Tél: 06 16 40 59 16</p>
+                <p>contact@stream-management.fr</p>
+            </div>
+            <div class="text-center md:text-right mt-4 md:mt-0 text-[#2B579A]">
+                <p class="font-bold">
+                    <a href="#" class="hover:underline">Mentions Légales</a>
+                    -
+                    <a href="#" class="hover:underline"> Politique d’utilisation des données personnelles</a>
+                </p>
+                <p class="text-sm mt-1">© 2019 Stream Management - Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+<script src="/js/card.js"></script>
+<script src="js/src.js"></script>
+</html>
